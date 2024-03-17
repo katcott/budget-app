@@ -1,7 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root { 
     --main-bg-color: #f1eded; 
     --main-text-color: #141204;
-    --accent-color-pink: #E2B1B1; 
+    --accent-color-pink: #F8AD9D; 
     --accent-color-green: #D2E59E;
 }
 
@@ -10,24 +15,57 @@
     src: url("fonts/josefinsans-regular-webfont.woff") format("woff");
 }
 
+html, body{
+    height: 100%;
+}
+
 body{
     font-family: "JosefinSans", sans-serif;
+    color: var(--main-text-color);
+    min-height: 100%;
+}
+
+.container{
+    height: 100%;
 }
 
 .header{
     background-color: var(--accent-color-pink);
-    min-height: 80px;
+    min-height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 20px;
-
+    padding: 10px 40px;    
 }
 
-.header ul{
+.sidebar ul{
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px 0px;
+}
+
+.sidebar li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .sidebar{
+    width: 20%;
+    background-color: var(--accent-color-green);
+    z-index: 1;
+}
 
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, minmax(300px, 2fr));
+    width: 100%;
+}
+
+.contentContainer {
+    display: flex;
+    width: 100%;
 }
