@@ -1,0 +1,33 @@
+:root { 
+    --main-bg-color: #f1eded; 
+    --main-text-color: #141204;
+    --accent-color-pink: #E2B1B1; 
+    --accent-color-green: #D2E59E;
+}
+
+@font-face {
+    font-family: "JosefinSans";
+    src: url("fonts/josefinsans-regular-webfont.woff") format("woff");
+}
+
+body{
+    font-family: "JosefinSans", sans-serif;
+}
+
+.header{
+    background-color: var(--accent-color-pink);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+}
+
+.header ul{
+    list-style-type: none;
+}
+
+.sidebar{
+
+}
