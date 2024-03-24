@@ -65,6 +65,43 @@ body{
     width: 100%;
 }
 
+.income1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.income1 div, 
+.income1 h3 {
+    padding: 20px;
+}
+
+.expenses1 {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+
+.income2 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+.income2 div, 
+.income2 h3 {
+    padding: 20px;
+}
+
+.expenses2 {
+    grid-row: 2 / 4;
+    grid-column: 3 / 4;
+}
+
+.overview {
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+}
+
 .contentContainer {
     display: flex;
     width: 100%;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>budget babe</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/coffee.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -18,13 +18,53 @@
             <div class="sidebar">
                 <ul>
                     <li><span class="material-symbols-outlined">account_balance_wallet</span> Budgeting</li>
-                    <li><span class="material-symbols-outlined">savings</span> Progress</li>
+                    <li><span class="material-symbols-outlined">savings</span> Balance Sheet</li>
                     <li><span class="material-symbols-outlined">person_play</span> Wishlist</li>
                 </ul>
             </div>
             <div class="main">
-                <div>
+                <div class="income1">
+                    <h3>Income for first half of the month</h3>
+                    <div>
+                        <label for="txtCheck1">Check 1: </label>
+                        <input type="number" name="txtCheck1" id="txtCheck1">
+                    </div>
                 </div>
+                <div class="expenses1">
+                    <table class="tblExpenses1">
+                        <thead>
+                          <tr>
+                            <th class="text-center">Description</th>
+                            <th class="text-center">Budgeted Cost</th>
+                            <th class="text-center">Actual Cost</th>
+                            <th class="text-center">Add</th>
+                            <th class="text-center">Remove</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="pt-3-half" contenteditable="true" name="td1Desc"><input type="text" name="add1" class="border-none"></td>
+                            <td class="pt-3-half" contenteditable="true" name="td1BC"><input type="text" name="add2" class="border-none"></td>
+                            <td class="pt-3-half" contenteditable="true" name="td1AC"><input type="text" name="add3"  class="border-none"></td>
+                            <td>
+                                <span class="table-add"><button type="button" class="btn btn-danger btn0rounded btn-sm my-0" onclick="addField()">Add</button></span>
+                            </td>
+                            <td>
+                              <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="overview"></div>
+                <div class="income2">
+                    <h3>Income for second half of the month</h3>
+                    <div>
+                        <label for="txtCheck2">Check 2: </label>
+                        <input type="number" name="txtCheck2" id="txtCheck2">
+                    </div>
+                </div>
+                <div class="expenses2"></div>
             </div>
         </div>
     </div>
